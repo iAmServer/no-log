@@ -1,0 +1,19 @@
+{
+  "name": "@iamserver/no-log",
+  "version": "1.0.0",
+  "description": "No console on client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iAmServer/no-log"
+  },
+  "author": "Arten Keyshor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAmServer/no-log/issues"
+  },
+  "homepage": "https://github.com/iAmServer/no-log#readme"
+}
