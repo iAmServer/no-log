@@ -12,7 +12,7 @@ npm install --save @iamserver/no-log
 
 ```js
 import noLog from "@iamserver/no-log"; // ES6
-var noLog = require("@iamserver/no-log"); // ES5 with npm
+const noLog = require("@iamserver/no-log"); // ES5 with npm
 ```
 
 ## Usage
