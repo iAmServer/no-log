@@ -1,6 +1,6 @@
 /**
- *  Disable the defalt windows console functions if state is true
- * @param {boolean | string} state  - true if the user is logged in
+ *  Disable the default window console functions if state is true or production
+ * @param {boolean | string} status
  */
 
 const noLog = (state = false) => {
