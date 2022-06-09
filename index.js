@@ -1,12 +1,11 @@
 /**
  *  Disable the defalt windows console functions if state is true
- * @param {boolean} state  - true if the user is logged in
+ * @param {boolean | string} state  - true if the user is logged in
  */
-const noLog = (state = false) => {
-  if (state) {
-    let oldConsoleLog = window.console.log;
-    window.console.log = () => {};
 
+const noLog = (state = false) => {
+  if (state || state === "production") {
+    window.console.log = () => {};
     window.console.error = () => {};
     window.console.warn = () => {};
     window.console.info = () => {};
@@ -21,6 +20,15 @@ const noLog = (state = false) => {
     window.console.groupEnd = () => {};
     window.console.assert = () => {};
     window.console.dir = () => {};
+    window.console.dirxml = () => {};
+    window.console.exception = () => {};
+    window.console.group = () => {};
+    window.console.groupCollapsed = () => {};
+    window.console.groupEnd = () => {};
+    window.console.markTimeline = () => {};
+    window.console.profile = () => {};
+    window.console.profileEnd = () => {};
+    window.console.table = () => {};
   }
 };
 
