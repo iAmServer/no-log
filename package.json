@@ -1,7 +1,7 @@
 {
   "name": "@iamserver/no-log",
   "version": "1.0.3",
-  "description": "No console on client",
+  "description": "NPM package to disable window.console methods",
   "main": "index.js",
   "scripts": {
     "lint-test": "semistandard --verbose | snazzy",
@@ -16,6 +16,15 @@
   "bugs": {
     "url": "https://github.com/iAmServer/no-log/issues"
   },
+  "keywords": [
+    "console",
+    "npm",
+    "package",
+    "log",
+    "no-log",
+    "console.log",
+    "module"
+  ],
   "homepage": "https://github.com/iAmServer/no-log#readme",
   "devDependencies": {
     "husky": "^8.0.1",

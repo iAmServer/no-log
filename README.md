@@ -1,4 +1,4 @@
-# no-log
+# no-log [![iAmServer - no-log](https://img.shields.io/badge/npm-v1.0.4-blue?logo=npm)](https://www.npmjs.com/package/@iamserver/no-log "Go to npmjs page")
 
 Remove all the Window.console in production, which prevents logging of information to the browser's console.
 
