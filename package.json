@@ -1,6 +1,6 @@
 {
   "name": "@iamserver/no-log",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NPM package to disable window.console methods",
   "main": "index.js",
   "scripts": {
