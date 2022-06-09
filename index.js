@@ -4,7 +4,7 @@
  */
 
 const noLog = (state = false) => {
-  if (state || state === "production") {
+  if (state || state === 'production') {
     window.console.log = () => {};
     window.console.error = () => {};
     window.console.warn = () => {};
