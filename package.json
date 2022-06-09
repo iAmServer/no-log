@@ -4,7 +4,7 @@
   "description": "No console on client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint-test": "semistandard --verbose | snazzy"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/iAmServer/no-log/issues"
   },
-  "homepage": "https://github.com/iAmServer/no-log#readme"
+  "homepage": "https://github.com/iAmServer/no-log#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-test"
+    }
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "semistandard": "^16.0.1",
+    "snazzy": "^9.0.0"
+  }
 }
