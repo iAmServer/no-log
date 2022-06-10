@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "lint-test": "semistandard --verbose | snazzy",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "patch": "npm version patch",
+    "publish:dist": "npm publish . --access=public",
+    "publish:beta": "npm publish . --tag beta --access=public",
+    "test": "node index.js",
+    "coverage": "nyc --reporter=lcov npm test"
   },
   "repository": {
     "type": "git",
